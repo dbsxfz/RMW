@@ -1,4 +1,4 @@
-# Code for Evaluating Evasion Robustness of Watermark Models
+# Code for Evaluating Evasion Robustness of Watermarked Models
 
 This folder provides the implementation for assessing the evasion robustness of watermarked models:
 
