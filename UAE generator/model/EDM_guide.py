@@ -230,7 +230,8 @@ class EDM_guide(nn.Module):
             intermediate_results.append(unnormalize_to_zero_to_one(x_next))
 
         return intermediate_results
-    
+
+    # adversarial warm-up
     def edm_advprior_single_class(self, n_sample, size, classifier, class_label=0, steps=18, drop_rate=1e-2, eta=0.0, guide_w=0.3, notqdm=False, use_amp=False, seed=None):
 
         model_args = self.prepare_single_class_condition_(class_label, n_sample)
@@ -359,7 +360,8 @@ class EDM_guide(nn.Module):
 
         return unnormalize_to_zero_to_one(x_next_new)
         # return unnormalize_to_zero_to_one(x_initial)
-    
+
+    # adversarial guidance
     def edm_advdiff_single_class(self, n_sample, size, classifier, class_label=0, steps=18, eta=0.0, guide_w=0.3, notqdm=False, use_amp=False):
         ''' Sampling with EDM sampler. Actual NFE is `3 * steps - 1`.
 
