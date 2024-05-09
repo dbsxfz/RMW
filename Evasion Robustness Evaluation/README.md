@@ -1,4 +1,4 @@
-# Code for Evaluating Evasion Robustness of Watermarked Models
+# Code for Evaluating Evasion Robustness of Watermark Models
 
 This folder provides the implementation for assessing the evasion robustness of watermarked models:
 
@@ -8,3 +8,5 @@ This folder provides the implementation for assessing the evasion robustness of 
 We have made enhancements to the vanilla Pixel Backdoor, including the addition of a universal attack version that flips samples from all classes to a single target class and an untargeted attack version that flips all samples to arbitrary incorrect labels. Furthermore, control over the intensity of regularization terms has been introduced.
 
 The notebooks `evaluation_normal_imagenette.ipynb` and `evaluation_pair_imagenette.ipynb` provide example usage of the code for untargeted attacks and fine-grained evaluation from source to target classes, respectively. These correspond to Section 5.1.1 "Overall Evaluation" and Section 5.1.2 "Class-wise Evaluation of Backdoor Watermarking" in the main text. Hyperparameters for initializing attacks are also provided.
+
+The notebooks `noise_label_trigger_inversion.ipynb` provide code for the Noise Label Trigger Inversion framework illustrated in the paper (Algorithm 1) and example usage applied to a MBW watermarked model.
