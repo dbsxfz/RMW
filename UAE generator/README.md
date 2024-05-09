@@ -1,6 +1,6 @@
 # Code for Generating UAEs as the Trigger Set
 
-This repository contains the implementation code for generating Universal Adversarial Examples (UAEs):
+This folder contains the implementation for generating Universal Adversarial Examples (UAEs):
 
 - The implementation leverages a diffusion backbone model, adapted from [this repository](https://github.com/FutureXiang/Diffusion).
 
